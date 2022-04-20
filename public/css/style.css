@@ -21257,13 +21257,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-body {
-  margin: 0 auto !important;
-  width: 60%;
-  box-shadow: 0px 0px 35px 1px rgb(172, 172, 172);
-  font-family: "ubuntu";
-}
-
 #section1 {
   background-color: #334D5C;
 }
@@ -21284,12 +21277,20 @@ footer {
   background-color: #393A3B;
 }
 
+@media (min-width: 1024px) {
+  body {
+    margin: 0 auto !important;
+    width: 60%;
+    box-shadow: 0px 0px 35px 1px rgb(172, 172, 172);
+    font-family: "ubuntu";
+  }
+}
 @media (min-width: 740px) and (max-width: 1023px) {
   body {
     font-size: 10px !important;
     text-align: center !important;
   }
-  body nav img {
+  body #nav-img1 {
     display: none;
   }
 }
@@ -21297,9 +21298,6 @@ footer {
   body {
     font-size: 10px !important;
     text-align: center !important;
-  }
-  body nav img {
-    display: none;
   }
 
   #section1 div:nth-child(1) {
@@ -21326,11 +21324,15 @@ footer {
 
   #div-img {
     display: grid !important;
-    grid-template-columns: 1fr !important;
   }
   #div-img img {
     width: 50%;
     padding: 5px;
+  }
+
+  nav ul {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
   }
 }
 
